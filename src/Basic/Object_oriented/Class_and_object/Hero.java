@@ -9,13 +9,13 @@ public class Hero {
 
     public static void main(String[] args) {
         Hero garen = new Hero();
-        garen.name = "¸ÇÂ×";
+        garen.name = "ç›–ä¼¦";
         garen.hp = 616.28f;
         garen.armor = 27.1f;
         garen.moveSpeed = 350;
 
         Hero teemo = new Hero();
-        teemo.name = "ÌáÄª";
+        teemo.name = "æè«";
         teemo.hp = 383.1f;
         teemo.armor = 14.1f;
         teemo.moveSpeed = 330;

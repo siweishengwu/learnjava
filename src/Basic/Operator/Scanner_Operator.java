@@ -6,14 +6,14 @@ public class Scanner_Operator {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 //        int a = s.nextInt();
-//        System.out.println("µÚÒ»¸öÕûÊı:"+a);
+//        System.out.println("ç¬¬ä¸€ä¸ªæ•´æ•°ï¼š"+a);
 //        int b = s.nextInt();
-//        System.out.println("µÚ¶ş¸öÕûÊı:"+b);
+//        System.out.println("ç¬¬äºŒä¸ªæ•´æ•°ï¼š"+b);
 //
 //        float c = s.nextFloat();
-//        System.out.println("¶ÁÈ¡µÄ¸¡µãÊıÖµÊÇ:"+c);
+//        System.out.println("è¯»å–çš„æµ®ç‚¹æ•°çš„å€¼æ˜¯"+c);
 
         String d = s.nextLine();
-        System.out.println("¶ÁÈ¡µÄ×Ö·û´®ÊÇ:"+d);
+        System.out.println("è¯»å–çš„å­—ç¬¦ä¸²æ˜¯:"+d);
     }
 }

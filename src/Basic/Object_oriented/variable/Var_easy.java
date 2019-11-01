@@ -5,7 +5,7 @@ public class Var_easy {
     float b = 2.769343f;//double h = "2.769343";
     int c = 365;
     short d = 12;
-    char e = '³Ô';
+    char e = 'åƒ';
     boolean f = false;
-    String G = "²»¿ÉÃèÊö";
+    String G = "ä¸å¯æè¿°";
 }

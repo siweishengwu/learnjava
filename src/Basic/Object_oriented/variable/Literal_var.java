@@ -21,16 +21,19 @@ public class Literal_var {
 //        System.out.println(d2);
 //        System.out.println(d3);
 
-        String name = "¸ÇÂ×";
+        String name = "ï¿½ï¿½ï¿½ï¿½";
         char a= 'c';
 
-        //ÒÔÏÂÊÇ×ªÒå×Ö·û
-        char tab = '\t'; //ÖÆ±í·û
-        char carriageReturn = '\r'; //»Ø³µ
-        char newLine = '\n'; //»»ĞĞ
-        char doubleQuote = '\"'; //Ë«ÒıºÅ
-        char singleQuote = '\''; //µ¥ÒıºÅ
-        char backslash = '\\'; //·´Ğ±¸Ü
+//        String name = "ç›–ä¼¦";
+//        char a= 'c';
+
+        //ä»¥ä¸‹æ˜¯è½¬ä¹‰å­—ç¬¦
+        char tab = '\t'; //åˆ¶è¡¨ç¬¦
+        char carriageReturn = '\r'; //å›è½¦
+        char newLine = '\n'; //æ¢è¡Œ
+        char doubleQuote = '\"'; //åŒå¼•å·
+        char singleQuote = '\''; //å•å¼•å·
+        char backslash = '\\'; //åæ–œæ 
         String doubleslash = "\\";
 
         System.out.print(name);

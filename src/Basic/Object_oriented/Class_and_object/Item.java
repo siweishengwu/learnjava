@@ -10,11 +10,11 @@ public class Item {
         hpbox.price = 50;
 
         Item shoes = new Item();
-        shoes.name = "≤›–¨";
+        shoes.name = "ËçâÈûã";
         shoes.price = 300;
 
         Item long_sword = new Item();
-        long_sword.name = "≥§Ω£";
+        long_sword.name = "ÈïøÂâë";
         long_sword.price = 350;
     }
 }

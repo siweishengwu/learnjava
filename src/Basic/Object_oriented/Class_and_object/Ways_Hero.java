@@ -11,7 +11,7 @@ public class Ways_Hero {
     }
 
     public void keng(){
-        System.out.println("¿Ó¶ÓÓÑ£¡£¡");
+        System.out.println("ï¿½Ó¶ï¿½ï¿½Ñ£ï¿½ï¿½ï¿½");
     }
 
     public void addSpeed(int speed){
@@ -20,7 +20,7 @@ public class Ways_Hero {
     }
 
     public void legendary(){
-        System.out.println("ÒÑ³¬Éñ");
+        System.out.println("ï¿½Ñ³ï¿½ï¿½ï¿½");
     }
 
     public float getHp(){
@@ -32,11 +32,11 @@ public class Ways_Hero {
     }
     public static void main(String[] args) {
         Ways_Hero garen = new Ways_Hero();
-        garen.name = "¸ÇÂ×";
+        garen.name = "ç›–ä¼¦";
         garen.moveSpeed = 350;
         garen.addSpeed(100);
-        System.out.println(garen.name+"ÏÖÔÚÑªÁ¿"+garen.hp);
+        System.out.println(garen.name+"å½“å‰è¡€é‡"+garen.hp);
         garen.recovery(50);
-        System.out.println(garen.name+"»ØÑªºó"+garen.hp);
+        System.out.println(garen.name+"åŠ è¡€ä¹‹å"+garen.hp);
     }
 }

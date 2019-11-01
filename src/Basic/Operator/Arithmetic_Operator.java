@@ -13,12 +13,12 @@ public class Arithmetic_Operator {
 
 //        int a = 5;
 //        long b = 6;
-//        int c = (int) (a+b); //a+bµÄÔËËã½á¹ûÊÇlongĞÍ£¬ËùÒÔÒª½øĞĞÇ¿ÖÆ×ª»»
+//        int c = (int) (a+b);//a+bçš„è¿ç®—ç»“æœæ˜¯longå‹ï¼Œæ‰€ä»¥è¦è¿›è¡Œå¼ºåˆ¶è½¬æ¢
 //        long d = a+b;
 
 //        byte a = 1;
 //        byte b= 2;
-//        byte c = (byte) (a+b); //ËäÈ»a b¶¼ÊÇbyteÀàĞÍ£¬µ«ÊÇÔËËã½á¹ûÊÇintÀàĞÍ£¬ĞèÒª½øĞĞÇ¿ÖÆ×ª»»
+//        byte c = (byte) (a+b); //è™½ç„¶a béƒ½æ˜¯byteç±»å‹ï¼Œä½†æ˜¯è¿ç®—ç»“æœæ˜¯intç±»å‹ï¼Œéœ€è¦è¿›è¡Œå¼ºåˆ¶è½¬æ¢
 //        int d = a+b;
 //        System.out.println(c);
 //        System.out.println(d);
@@ -28,11 +28,11 @@ public class Arithmetic_Operator {
 //        System.out.println(j); //18
 
         Scanner s = new Scanner(System.in);
-        System.out.println("ÇëÊäÈëÉí¸ß(m):");
+        System.out.println("è¯·è¾“å…¥èº«é«˜():");
         double a =s.nextDouble();
-        System.out.println("ÇëÊäÈëÌåÖØ(kg):");
+        System.out.println("è¯·è¾“å…¥ä½“é‡(kg):");
         double b =s.nextDouble();
         double c = b/(a*a);
-        System.out.println("µ±Ç°µÄBMIÊÇ:"+c);
+        System.out.println("å½“å‰çš„BMIæ˜¯:"+c);
     }
 }
