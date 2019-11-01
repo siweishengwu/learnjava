@@ -1,4 +1,4 @@
-package basic.Object_oriented.Class_and_object;
+package Basic.Object_oriented.Class_and_object;
 
 public class Hero {
 

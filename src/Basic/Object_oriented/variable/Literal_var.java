@@ -1,4 +1,4 @@
-package basic.Object_oriented.variable;
+package Basic.Object_oriented.variable;
 
 public class Literal_var {
     public static void main(String[] args) {
