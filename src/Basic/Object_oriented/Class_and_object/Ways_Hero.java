@@ -11,7 +11,7 @@ public class Ways_Hero {
     }
 
     public void keng(){
-        System.out.println("�Ӷ��ѣ���");
+        System.out.println("坑");
     }
 
     public void addSpeed(int speed){
@@ -20,7 +20,7 @@ public class Ways_Hero {
     }
 
     public void legendary(){
-        System.out.println("�ѳ���");
+        System.out.println("超神");
     }
 
     public float getHp(){
