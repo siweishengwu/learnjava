@@ -1,4 +1,4 @@
-package Basic.Object_oriented.variable;
+package Basic.Object_Oriented.variable;
 
 public class Var_easy {
     double a = 3.14;

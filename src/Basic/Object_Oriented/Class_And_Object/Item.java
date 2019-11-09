@@ -1,4 +1,4 @@
-package Basic.Object_oriented.Class_and_object;
+package Basic.Object_Oriented.Class_And_Object;
 
 public class Item {
     String name ;
