@@ -1,4 +1,4 @@
-package Basic.Control_Process.Control_Process_for;
+package Basic.Control_Process.Control_Process_For;
 
 import java.util.Scanner;
 
