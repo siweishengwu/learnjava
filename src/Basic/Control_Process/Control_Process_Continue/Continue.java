@@ -9,7 +9,7 @@ public class Continue {
 //            else if (i % 5 == 0)
 //                continue;
 //            else
-            if (i % 3 == 0 || i % 5 ==0)
+            if (i % 3 == 0 || i % 5 ==0) //遇到3和5的倍数跳过
                 continue;
             System.out.println(i);
         }

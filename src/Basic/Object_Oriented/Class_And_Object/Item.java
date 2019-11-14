@@ -6,7 +6,7 @@ public class Item {
 
     public static void main(String[] args) {
         Item hpbox = new Item();
-        hpbox.name = "Ѫƿ";
+        hpbox.name = "血瓶";
         hpbox.price = 50;
 
         Item shoes = new Item();

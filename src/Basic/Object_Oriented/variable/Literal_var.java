@@ -21,7 +21,7 @@ public class Literal_var {
 //        System.out.println(d2);
 //        System.out.println(d3);
 
-        String name = "����";
+        String name = "盖伦";
         char a= 'c';
 
 //        String name = "盖伦";

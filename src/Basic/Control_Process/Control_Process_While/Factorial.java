@@ -9,6 +9,7 @@ public class Factorial {
         int number = s.nextInt();
         int factorial = 1;
         while( number > 1 ){
+            //一直减的同时乘上那个数字
             factorial =  factorial * number;
             number--;
         }
