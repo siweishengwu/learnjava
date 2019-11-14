@@ -1,4 +1,4 @@
-package Basic.Control_Process;
+package Basic.Control_Process.Control_Process_Break;
 
 public class Millionaire {
     public static void main(String[] args) {
