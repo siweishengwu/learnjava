@@ -6,7 +6,7 @@ public class GoldenPoint {
         double inumber = 0.0;
         double jnumber = 0.0;
         double absnumber = 0.0;
-        double number =0.0;
+        double number = 0.0;
         double min = 0.0;
         double youcan = 0.0;
         for (double i = 1; i < 21 ; i++){
@@ -22,13 +22,13 @@ public class GoldenPoint {
                         jnumber = j;
                         System.out.println("第一次的结果i："+inumber+",j："+jnumber+",余为："+absnumber);
                         value++;
-                    }else if (value >1){
-                        if (min>absnumber){
-                            min=absnumber;
-                            inumber=i;
-                            jnumber=j;
+                    }else if (value > 1){
+                        if (min > absnumber){
+                            min = absnumber;
+                            inumber = i;
+                            jnumber = j;
                             value++;
-                            youcan =0.618-min;
+                            youcan = 0.618 - min;
                         }
                     }
                 }
