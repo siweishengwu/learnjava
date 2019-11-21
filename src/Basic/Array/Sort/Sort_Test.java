@@ -8,6 +8,7 @@ public class Sort_Test {
         a[2] = (int) (Math.random() *100);
         a[3] = (int) (Math.random() *100);
         a[4] = (int) (Math.random() *100);
+        System.out.println("随机生成的排序");
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i]+" ");
         }
@@ -22,6 +23,7 @@ public class Sort_Test {
             }
         }
         System.out.println("");
+        System.out.println("正向排序（选择排序）");
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i]+" ");
         }
@@ -36,6 +38,7 @@ public class Sort_Test {
             }
         }
         System.out.println("");
+        System.out.println("逆向排序（冒泡排序）");
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i]+" ");
         }
