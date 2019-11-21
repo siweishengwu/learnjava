@@ -1,6 +1,6 @@
 package Basic.Array.Sort;
 
-public class Test {
+public class Select_Sort {
     public static void main(String[] args) {
         int a [] = new int[]{18,62,68,7,65,9,};
         //排序前，先把内容打印出来
