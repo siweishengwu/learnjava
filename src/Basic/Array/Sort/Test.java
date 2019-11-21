@@ -8,14 +8,14 @@ public class Test {
             System.out.print(a[i] + " ");
         }
 
-        for (int i = 0; i <a.length ; i++) {
-            for (int j = i+1;j <a.length ; j++) {
+        for (int i = 0; i < a.length ; i++) {
+            for (int j = i+1; j < a.length ; j++) {
                 if (a[i]>a[j]){
                     //如果后面的数比较小就移动到前面，
                     // 两个数字交换申请多一个变量也就是水杯交换
                     int temp = a[i];
                     a[i] = a[j];
-                    a[j] =temp;
+                    a[j] = temp;
                 }
             }
         }
