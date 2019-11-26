@@ -10,7 +10,9 @@ public class Support extends Hero {
     public void heal(Hero h1,Hero h2) {
         System.out.println(name + "治疗了" + h1.name + "和" + h2.name);
     }
-
+    public void  heal(Hero h1,int blood) {
+        System.out.println(name + "治疗了" + h1.name + "加了" + blood +"点血");
+    }
     public static void main(String[] args) {
         Support Soraka = new Support();
         Soraka.name = "索拉卡";
@@ -23,5 +25,6 @@ public class Support extends Hero {
         Soraka.heal();
         Soraka.heal(h2);
         Soraka.heal(h1,h2);
+        Soraka.heal(h2,100);
     }
 }
