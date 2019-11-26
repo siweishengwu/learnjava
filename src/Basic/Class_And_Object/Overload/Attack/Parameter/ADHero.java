@@ -1,4 +1,4 @@
-package Basic.Array.Class_And_Object.Overload.Attack.Parameter;
+package Basic.Class_And_Object.Overload.Attack.Parameter;
 
 public class ADHero extends Hero {
 

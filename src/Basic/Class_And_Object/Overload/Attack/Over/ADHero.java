@@ -1,4 +1,4 @@
-package Basic.Array.Class_And_Object.Overload.Attack.Over;
+package Basic.Class_And_Object.Overload.Attack.Over;
 
 public class ADHero extends Hero {
     public void attack() {

@@ -1,4 +1,4 @@
-package Basic.Array.Class_And_Object.Overload.Heal.Parameter;
+package Basic.Class_And_Object.Overload.Heal.Parameter;
 
 public class Support extends Hero {
     public void heal() {

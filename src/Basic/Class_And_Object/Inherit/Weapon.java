@@ -1,4 +1,4 @@
-package Basic.Array.Class_And_Object.Inherit;
+package Basic.Class_And_Object.Inherit;
 
 public class Weapon extends Item {
     int damage;

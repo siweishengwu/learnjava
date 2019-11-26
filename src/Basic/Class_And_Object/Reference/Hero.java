@@ -1,4 +1,4 @@
-package Basic.Array.Class_And_Object.Reference;
+package Basic.Class_And_Object.Reference;
 
 public class Hero {
     String name;
