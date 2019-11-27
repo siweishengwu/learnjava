@@ -20,5 +20,6 @@ public class Support extends Hero {
 
         Soraka.heal();
         Soraka.heal(h1,h2);
+        Soraka.heal(Soraka);
     }
 }
