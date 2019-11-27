@@ -5,9 +5,9 @@ public class Hero {
     float hp;
     float armor;
     int moveSpeed;
-    public Hero(){
-        System.out.println("调用Hero的构造方法");
-    }
+//    public Hero(){
+//        System.out.println("调用Hero的构造方法");
+//    }
     public static void main(String[] args) {
         Hero garen = new Hero();
         garen.name = "盖伦";
