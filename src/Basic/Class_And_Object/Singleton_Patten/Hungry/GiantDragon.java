@@ -1,4 +1,4 @@
-package Basic.Class_And_Object.Singleton_Patten.hungry;
+package Basic.Class_And_Object.Singleton_Patten.Hungry;
 
 public class GiantDragon {
     private GiantDragon(){
