@@ -1,7 +1,11 @@
-package Basic.Interface_And_Inheritance.Super.step5;
+package Basic.Interface_And_Inheritance.Super.step6;
 
+import Basic.Interface_And_Inheritance.ReWrite.Property.Item;
+import Basic.Interface_And_Inheritance.ReWrite.Property.LifePotion;
 public class ADHero extends Hero implements AD {
+
     int moveSpeed = 400;
+
     @Override
     public void physicAttack() {
         System.out.println("进行物理攻击");
@@ -13,9 +17,13 @@ public class ADHero extends Hero implements AD {
         return super.moveSpeed;
     }
 
+    public void useItem(Item i){
+        System.out.println("adhero use item");
+        super.useItem(i);
+    }
+
     public static void main(String[] args) {
         ADHero h = new ADHero();
-        System.out.println(h.getMoveSpeed());
-        System.out.println(h.getMoveSpeed2());
+        LifePotion lp = new LifePotion();
     }
 }
