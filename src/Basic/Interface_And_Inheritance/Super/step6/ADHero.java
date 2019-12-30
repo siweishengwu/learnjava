@@ -25,5 +25,8 @@ public class ADHero extends Hero implements AD {
     public static void main(String[] args) {
         ADHero h = new ADHero();
         LifePotion lp = new LifePotion();
+        System.out.println(h instanceof ADHero);
+        System.out.println(h instanceof Hero);
+        System.out.println(h instanceof Object);
     }
 }
