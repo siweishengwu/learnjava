@@ -1,0 +1,24 @@
+斜体：表示抽象类
+《interface》 接口
+# protected
++ public
+
+#legs ：int
+符号后面 属性名（legs） 属性类型（int）
+
++walk（）
+普通方法
+
++eat（）
+抽象方法
+
++getName（）：String
+方法 getName（） 返回 String
+
++setName（name：String）
+方法 setName() String 类型的参数
+
++ play（）
+无参方法
+
+_ （下划线）构造方法

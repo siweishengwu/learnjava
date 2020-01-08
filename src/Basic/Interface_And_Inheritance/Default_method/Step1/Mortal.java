@@ -5,4 +5,7 @@ public interface Mortal {
     default public void revive(){
         System.out.println("英雄复活了");
     }
+    default public void attack(){
+        System.out.println("attack");
+    }
 }
