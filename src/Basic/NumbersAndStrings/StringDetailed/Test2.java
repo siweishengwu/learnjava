@@ -10,7 +10,24 @@ public class Test2 {
             String  randomString = randomString(5);
             ss[i] = randomString;
         }
-        System.out.println("未排序");
+        System.out.println("未排序:");
+        System.out.println(Arrays.toString(ss));
+
+        for (int i = 0; i < ss.length; i++) {
+            for (int j = 0; j < ss.length - j -1; j++) {
+                char firstChar1 = ss[j].charAt(0);
+                char firstChar2 = ss[j+1].charAt(0);
+                firstChar1 = Character.toLowerCase(firstChar1);
+                firstChar2 = Character.toLowerCase(firstChar2);
+
+                if (firstChar1 > firstChar2){
+                    String temp = ss[j];
+                    ss[j+1] = ss[j];
+                    ss[j] = temp;
+                }
+            }
+        }
+        System.out.println("排序后的数组：");
         System.out.println(Arrays.toString(ss));
     }
     private static String randomString(int length){
