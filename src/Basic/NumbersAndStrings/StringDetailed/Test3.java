@@ -3,6 +3,30 @@ package Basic.NumbersAndStrings.StringDetailed;
 public class Test3 {
     public static void main(String[] args) {
 
+        String password = randomString(3);
+        System.out.println("密码是："+ password);
+
+        char[] guessPassword = new char[3];
+        outloop:
+        for (short i = '0'; i <= 'z' ; i++) {
+            for (short j = '0'; j <= 'z' ; j++) {
+                for (short k = '0'; k < 'z'; k++) {
+                    if (!isLetterOrDigit(i,j,k))
+                        continue;
+                    guessPassword[0] = (char) i;
+                    guessPassword[1] = (char) j;
+                    guessPassword[2] = (char) k;
+                    String guess = new String(guessPassword);
+//                    System.out.println("穷举出来的密码是："+guess);
+
+                    if (guess.equals(password)){
+                        System.out.println("找到了，密码是"+guess);
+                        break outloop;
+                    }
+                }
+            }
+        }
+
     }
     private static boolean isLetterOrDigit(short i,short j,short k){
         return Character.isLetterOrDigit(i)&&
