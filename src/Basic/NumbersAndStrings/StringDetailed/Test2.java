@@ -14,7 +14,7 @@ public class Test2 {
         System.out.println(Arrays.toString(ss));
 
         for (int i = 0; i < ss.length; i++) {
-            for (int j = 0; j < ss.length - j -1; j++) {
+            for (int j = 0; j < ss.length - i -1; j++) {
                 char firstChar1 = ss[j].charAt(0);
                 char firstChar2 = ss[j+1].charAt(0);
                 firstChar1 = Character.toLowerCase(firstChar1);
@@ -22,8 +22,8 @@ public class Test2 {
 
                 if (firstChar1 > firstChar2){
                     String temp = ss[j];
-                    ss[j+1] = ss[j];
-                    ss[j] = temp;
+                    ss[j] = ss[j+1];
+                    ss[j+1] = temp;
                 }
             }
         }
