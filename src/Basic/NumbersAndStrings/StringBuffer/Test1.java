@@ -9,14 +9,14 @@ public class Test1 {
         String str1 ="";
         long start = System.currentTimeMillis();
         for (int i = 0; i <total ; i++) {
-            str1 +=s;
+            str1 +=s;//字符串拼接
         }
         long end = System.currentTimeMillis();
         System.out.printf("使用字符串连接+的方式，链接%d次，耗时%d毫秒%n",total,end-start);
         total *=100;
         start = System.currentTimeMillis();
         for (int i = 0; i <total ; i++) {
-            sb.append(s);
+            sb.append(s);//Stringbuffer拼接
         }
         end = System.currentTimeMillis();
         System.out.printf("使用Stringbuffer，连续%d次，耗时%d毫秒%n",total,end-start);
