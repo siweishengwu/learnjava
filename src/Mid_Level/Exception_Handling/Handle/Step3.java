@@ -17,13 +17,12 @@ public class Step3 {
             System.out.println("成功打开");
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
             Date d = sdf.parse("2016-06:03");
-        }catch (FileNotFoundException e){
+        } catch (FileNotFoundException e){
             System.out.println("d:/1.exe不存在");
             e.printStackTrace();
-        }catch (ParseException e){
+        } catch (ParseException e){
             System.out.println("日期格式解析错误");
             e.printStackTrace();
         }
     }
-
 }

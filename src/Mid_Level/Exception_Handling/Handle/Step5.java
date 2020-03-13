@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 
 public class Step5 {
     public static void main(String[] args) {
-        File f = new File("d:/1.exe");
+        File f = new File("c:/1.exe");
         try{
             System.out.println("试图打开d:/1.exe");
             new FileInputStream(f);
