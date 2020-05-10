@@ -23,7 +23,7 @@ public class Step5 {
             FileOutputStream fos = new FileOutputStream(f);
             fos.write(date);
             fos.close();
-        }catch (IOException e){
+        } catch (IOException e){
             e.printStackTrace();
         }
     }
