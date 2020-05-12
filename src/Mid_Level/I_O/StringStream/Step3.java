@@ -1,4 +1,4 @@
-package Mid_Level.StringStream;
+package Mid_Level.I_O.StringStream;
 
 import java.io.File;
 import java.io.FileOutputStream;

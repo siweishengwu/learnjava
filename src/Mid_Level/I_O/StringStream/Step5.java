@@ -1,4 +1,4 @@
-package Mid_Level.StringStream;
+package Mid_Level.I_O.StringStream;
 
 import javax.imageio.IIOException;
 import java.io.File;

@@ -1,4 +1,4 @@
-package Mid_Level.Stream;
+package Mid_Level.I_O.Stream;
 
 import java.io.File;
 import java.io.FileInputStream;
