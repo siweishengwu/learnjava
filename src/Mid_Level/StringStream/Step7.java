@@ -8,8 +8,8 @@ import java.util.Arrays;
 
 public class Step7 {
     public static void main(String[] args) {
-        int eachSize = 100*1024; // 100k
-        File srcFile = new File("d:/eclipse.exe");
+        int eachSize = 2; // 100k
+        File srcFile = new File("D:/新建文件夹/lol.txt");
         splitFile(srcFile,eachSize);
     }
     /*
