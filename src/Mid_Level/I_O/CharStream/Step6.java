@@ -32,6 +32,7 @@ public class Step6 {
         }
     }
 
+    //这里的09az是位置比较尴尬需要单独处理，其他都是+1
     private static void decode(char[] fileContent) {
         for (int i = 0; i < fileContent.length; i++) {
             char c = fileContent[i];
