@@ -62,8 +62,8 @@ public class Step6 {
     }
 
     public static void main(String[] args) {
-        File decodingFile = new File("E:/project/j2se/src/Test2.txt");
-        File decodedFile = new File("E:/project/j2se/src/Test1.txt");
+        File decodingFile = new File("d:/lol2.txt");
+        File decodedFile = new File("d:/lol.txt");
 
         decodeFile(decodingFile, decodedFile);
 
