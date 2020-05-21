@@ -44,6 +44,6 @@ public class Step13 {
     private static byte[] removeBom(byte[] all, byte[] bom) {
         return Arrays.copyOfRange(all,bom.length,all.length);
     }
-    }
+}
 
 
