@@ -18,7 +18,7 @@ public class Step13 {
             System.out.println("打印出文件里所有的数据的16进制是：");
             for (byte b:all) {
                 int i = b&0xff;
-                System.out.println(Integer.toHexString(i)+" ");
+                System.out.print(Integer.toHexString(i)+" ");
             }
             System.out.println();
             System.out.println("通过观察法得出 UTF-8的 BOM 是 ef bb bf");
