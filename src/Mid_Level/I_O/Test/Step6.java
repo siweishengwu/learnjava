@@ -39,8 +39,8 @@ public class Step6 {
     }
 
     public static void main(String[] args) {
-        File folder = new File("d:/lolFolder");
-        search(folder,"Magic");
+        File folder = new File("C:\\code\\how2j-newlearnsomething\\src");
+        search(folder,"Hero");
     }
 
 }
