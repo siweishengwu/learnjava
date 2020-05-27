@@ -14,14 +14,14 @@ public class TestCollection {
         }
         Hero specialHero = new Hero("special hero");
         heros.add(specialHero);
-        String name = "hero 3";
+        String name = "hero 4";
         System.out.println(heros);
         for (int i = 0; i < heros.size(); i++) {
             Hero h = (Hero) heros.get(i);
             if (name.equals(h.name)) {
                 System.out.printf("找到了name是%s的对象",name);
                 System.out.println();
-                System.out.println(i);
+                System.out.println(i+1);
                 break;
             }
         }
