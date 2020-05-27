@@ -26,7 +26,7 @@ public class Account { //账户类
         System.out.println(a.getBalance());
         try{
             a.withdraw(2001);
-        }catch (OverDraftException e){
+        } catch (OverDraftException e){
             System.out.println("透支金额"+e.getDeficit());//透支额
             e.printStackTrace();
         }
