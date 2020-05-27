@@ -118,12 +118,12 @@ public class MyStringBuffer implements IStringBuffer {
     public static void main(String[] args) {
        MyStringBuffer sb = new MyStringBuffer("there light");
         System.out.println(sb);
-        sb.insert(0 ,"let");
+        sb.insert(0 ,"let ");
         System.out.println(sb);
 
-        sb.insert(10,"be");
+        sb.insert(10,"be ");
         System.out.println(sb);
-        sb.insert(0,"God Say");
+        sb.insert(0,"God Say ");
         System.out.println(sb);
         sb.append("!");
         System.out.println(sb);
