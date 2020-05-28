@@ -5,7 +5,7 @@ import java.nio.charset.Charset;
 
 public class Step9 {
     public static void main(String[] args) throws UnsupportedEncodingException, FileNotFoundException {
-        File f = new File("d:/lol2.txt");
+        File f = new File("d:/ lol2.txt");
         System.out.println("默认编码方式："+ Charset.defaultCharset());
         //FileReader得到的是字符，所以一定是已经把字节根据某种编码识别成了字符了
         //而FileReader使用的编码方式是Charset.defaultCharset()的返回值，如果是中文的操作系统，就是GNK
