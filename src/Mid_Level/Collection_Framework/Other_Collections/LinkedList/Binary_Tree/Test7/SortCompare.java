@@ -1,6 +1,9 @@
 package Mid_Level.Collection_Framework.Other_Collections.LinkedList.Binary_Tree.Test7;
 
+import Mid_Level.Collection_Framework.Other_Collections.LinkedList.Binary_Tree.Test3.Node;
+
 import java.util.Arrays;
+import java.util.List;
 
 public class SortCompare {
 
@@ -19,6 +22,116 @@ public class SortCompare {
         int[] use4sort;
 
         use4sort = Arrays.copyOf(originalNumbers,originalNumbers.length);
-//        int[] sortedNumbersBySelection = performance
+        int[] sortedNumberBySelection = performance(new SelectionSort(use4sort),"选择法");
+
+        use4sort = Arrays.copyOf(originalNumbers,originalNumbers.length);
+        int[] sortedNumberByBubbling = performance(new BubblingSort(use4sort),"冒泡法");
+
+        use4sort = Arrays.copyOf(originalNumbers,originalNumbers.length);
+        int[] sortedNumbersByTree = performance(new TreeSort(use4sort),"二叉树");
+
+        System.out.println("查看排序结果，是否是不同的数组对象");
+        System.out.println(sortedNumberBySelection);
+        System.out.println(sortedNumberByBubbling);
+        System.out.println(sortedNumbersByTree);
+
+        System.out.println("查看排序结果，内容是否相同");
+        System.out.println("比较 选择法 和 冒泡法 排序结果： ");
+        System.out.println(Arrays.equals(sortedNumberBySelection,sortedNumberByBubbling));
+        System.out.println("比较 选择法 和 二叉树 排序结果： ");
+        System.out.println(Arrays.equals(sortedNumberBySelection,sortedNumbersByTree));
     }
-}
+
+
+
+    interface Sort{
+        void sort();
+        int[] values();
+    }
+
+    static class SelectionSort implements Sort{
+
+        int numbers[];
+        SelectionSort(int [] numbers){
+            this.numbers = numbers;
+        }
+
+        @Override
+        public void sort() {
+            for (int j = 0; j < numbers.length-1; j++) {
+                for (int i = j+1; i < numbers.length; i++) {
+                    if (numbers[i]<numbers[j]){
+                        int temp = numbers[j];
+                        numbers[j] = numbers[i];
+                        numbers[i] = temp;
+                    }
+                }
+            }
+        }
+
+        @Override
+        public int[] values() {
+            return numbers;
+        }
+    }
+
+    static class BubblingSort implements Sort{
+        int numbers[];
+        BubblingSort(int [] numbers){
+            this.numbers = numbers;
+        }
+
+        @Override
+        public void sort() {
+            for (int j = 0; j < numbers.length; j++) {
+                    for (int i = 0; i < numbers.length; i++) {
+                        if (numbers[i] > numbers[i+1]){
+                            int temp = numbers[i];
+                            numbers[i] = numbers[i+1];
+                            numbers[i+1] = temp;
+                        }
+                }
+            }
+        }
+
+        @Override
+        public int[] values() {
+            return numbers;
+        }
+    }
+        static  class TreeSort implements Sort{
+            int numbers[];
+            Node n;
+
+            TreeSort(int [] numbers){
+                n = new Node();
+                this.numbers = numbers;
+            }
+
+            @Override
+            public void sort() {
+                for (int i : numbers) {
+                    n.add(i);
+                }
+            }
+
+            @Override
+            public int[] values() {
+                List<Object> list = n.values();
+                int sortedNumbers[] = new int[list.size()];
+                for (int i = 0; i < sortedNumbers.length; i++) {
+                    sortedNumbers[i] = Integer.parseInt(list.get(i).toString());
+                }
+                return sortedNumbers;
+            }
+        }
+        private static int[] performance(Sort algorithm, String type) {
+            long start = System.currentTimeMillis();
+            algorithm.sort();
+            int sortedNumbers[] = algorithm.values();
+            long end = System.currentTimeMillis();
+            System.out.printf("%s 排序,一共耗时 %d 毫秒%n",type,end-start);
+            return sortedNumbers;
+        }
+    }
+
