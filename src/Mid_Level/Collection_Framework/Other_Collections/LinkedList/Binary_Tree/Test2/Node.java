@@ -15,11 +15,12 @@ public class Node {
         // 如果当前字节没有值,就把数据放在当前子节点上
         if (null == value)
             value = v;
+
         // 如果当前节点又值，就进行判断，新增的值与当前值的大小关系
         else {
             // 新增的值，比当前值小或者相同
 
-            if ((Integer) v -((Integer) value) <=0 ) {
+            if ((Integer) v -((Integer) value) <= 0 ) {
                 if (null == leftNode)
                     leftNode = new Node();
                 leftNode.add(v);

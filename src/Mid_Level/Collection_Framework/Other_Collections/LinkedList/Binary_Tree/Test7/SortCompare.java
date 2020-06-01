@@ -22,24 +22,24 @@ public class SortCompare {
         int[] use4sort;
 
         use4sort = Arrays.copyOf(originalNumbers,originalNumbers.length);
-        int[] sortedNumberBySelection = performance(new SelectionSort(use4sort),"选择法");
+        int[] sortedNumbersBySelection = performance(new SelectionSort(use4sort),"选择法");
 
         use4sort = Arrays.copyOf(originalNumbers,originalNumbers.length);
-        int[] sortedNumberByBubbling = performance(new BubblingSort(use4sort),"冒泡法");
+        int[] sortedNumbersByBubbling = performance(new BubblingSort(use4sort),"冒泡法");
 
         use4sort = Arrays.copyOf(originalNumbers,originalNumbers.length);
         int[] sortedNumbersByTree = performance(new TreeSort(use4sort),"二叉树");
 
         System.out.println("查看排序结果，是否是不同的数组对象");
-        System.out.println(sortedNumberBySelection);
-        System.out.println(sortedNumberByBubbling);
+        System.out.println(sortedNumbersBySelection);
+        System.out.println(sortedNumbersByBubbling);
         System.out.println(sortedNumbersByTree);
 
         System.out.println("查看排序结果，内容是否相同");
         System.out.println("比较 选择法 和 冒泡法 排序结果： ");
-        System.out.println(Arrays.equals(sortedNumberBySelection,sortedNumberByBubbling));
+        System.out.println(Arrays.equals(sortedNumbersBySelection,sortedNumbersByBubbling));
         System.out.println("比较 选择法 和 二叉树 排序结果： ");
-        System.out.println(Arrays.equals(sortedNumberBySelection,sortedNumbersByTree));
+        System.out.println(Arrays.equals(sortedNumbersBySelection,sortedNumbersByTree));
     }
 
 
@@ -84,7 +84,7 @@ public class SortCompare {
         @Override
         public void sort() {
             for (int j = 0; j < numbers.length; j++) {
-                    for (int i = 0; i < numbers.length; i++) {
+                    for (int i = 0; i < numbers.length-j-1; i++) {
                         if (numbers[i] > numbers[i+1]){
                             int temp = numbers[i];
                             numbers[i] = numbers[i+1];

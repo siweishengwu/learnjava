@@ -44,7 +44,7 @@ public class Node {
             values.addAll(leftNode.values());
 
         // 当前结果
-        values.add(values);
+        values.add(value);
 
         //右节点的遍历结果
         if (null != rightNode)
