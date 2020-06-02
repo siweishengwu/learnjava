@@ -12,7 +12,7 @@ public class TestCollection {
         }
         // 打印
         for (int i = 0; i < ss.length; i++) {
-            System.out.println(ss[i]+" ");
+            System.out.print(ss[i]+" ");
             if (19 == i%20)
                 System.out.println();
         }
@@ -32,29 +32,29 @@ public class TestCollection {
                 }
             }
         }
-        System.out.printf("总共有%d种重复的字符串%m",result.size());
-        if (result.size() != 0) {
+        System.out.printf("总共有%d种重复的字符串%n",result.size());
+        if (result.size()!= 0) {
             System.out.println("分别是：");
             for (String s : result) {
-                System.out.println(s + " ");
+                System.out.print(s + " ");
             }
         }
     }
 
     private static String randomString(int length) {
         String pool = "";
-        for (int i = '0'; i <= '9' ; i++) {
+        for (short i = '0'; i <= '9' ; i++) {
             pool += (char) i;
         }
-        for (int i = 'a'; i <= 'z' ; i++) {
+        for (short i = 'a'; i <= 'z' ; i++) {
             pool += (char) i;
         }
-        for (int i = 'A'; i <= 'Z' ; i++) {
+        for (short i = 'A'; i <= 'Z' ; i++) {
             pool += (char) i;
         }
         char cs[] = new char[length];
         for (int i = 0; i < cs.length; i++) {
-            int index = (int)(Math.random())*pool.length();
+            int index = (int) (Math.random()*pool.length());
             cs[i] = pool.charAt(index);
         }
         String result = new String(cs);
