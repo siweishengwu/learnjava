@@ -1,6 +1,5 @@
 package Mid_Level.Generic.Generic_In_Collection;
 
-import Basic.Interface_And_Inheritance.Interface.AD;
 import Basic.Interface_And_Inheritance.Interface.ADHero;
 import Basic.Interface_And_Inheritance.Interface.APHero;
 
