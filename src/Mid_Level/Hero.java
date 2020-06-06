@@ -1,16 +1,23 @@
 package Mid_Level;
 
 public class Hero {
-    String name; // 姓名
-    float hp; //血量
-    float armor; //护甲
-    int moveSpeed; //移动速度
+    public String name;
+    public float hp;
 
-    public static void main(String[] args) {
-        //创建一个对象
-        new Hero();
+    public int damage;
 
-        //使用一个引用来指向这个对象
-        Hero h = new Hero();
+    public Hero() {
+
+    }
+
+    // 增加一个初始化name的构造方法
+    public Hero(String name) {
+        this.name = name;
+    }
+
+    // 重写toString方法
+    public String toString() {
+        return name;
     }
 }
+
