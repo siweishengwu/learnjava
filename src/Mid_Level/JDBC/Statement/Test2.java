@@ -1,9 +1,6 @@
 package Mid_Level.JDBC.Statement;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.Statement;
+import java.sql.*;
 
 public class Test2 {
     public static void main(String[] args) {
@@ -14,11 +11,24 @@ public class Test2 {
             e.printStackTrace();
         }
 
-        String sql = "insert into here values(null,?,?,?)";
-//        try (
-//                Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/how2java?characterEncoding=UTF-8","root","admin");
-//                Statement s = c.createStatement();
-//                PreparedStatement ps = c.prepareStatement(sql);
-//                )
+        String sql = "insert into hero values(null,?,?,?)";
+        try (
+                Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/how2java?characterEncoding=UTF-8","root","admin");
+                Statement s = c.createStatement();
+                PreparedStatement ps = c.prepareStatement(sql);
+                ){
+            // Statement需要进行字符串拼接，可读性喝维修性比较差
+            String sql0 = "insert into hero values(null," + "'提莫'" + "," + 313.0f + "," + 50 + ")";
+            s.execute(sql0);
+
+            // PreparedStatement 使用参数设置,可读性好,不易犯错
+            // "insert into hero values(null,?,?,?,?)";
+            ps.setString(1,"提莫");
+            ps.setFloat(2,313.0f);
+            ps.setInt(3,50);
+            ps.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
